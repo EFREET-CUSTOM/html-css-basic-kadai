@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+html {
+	font-size: 20px;
+}
+
+body {
+	font-family: "Arial", "Meiryo", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
+	font-family: "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap", sans-serif;
+	letter-spacing: 1.2rem;
+	text-shadow: 1px 2px 3px gray;
+	border-bottom: solid 3px rgb(115, 115, 114);
+}
+
+h1::first-letter {
+	color: skyblue;
+}
+
+h1 > span {
+	color: rgb(255, 192, 203);
+}
+
+h2 {
+	color: rgb(255, 192, 203);
+}
+
+h2:nth-of-type(2n) {
+	color: skyblue;
+}
+
+#basic > p {
+	font-weight: bold;
+}
