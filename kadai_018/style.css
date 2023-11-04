@@ -15,52 +15,56 @@
 	--bottom-height: calc(var(--bottom-child-height) * 3);
 }
 
-body {
-	text-align: center;
-}
-
 #top {
 	background-color: var(--color01);
 	width: var(--width);
-	margin: 0 auto;
+	margin: var(--gutter) auto;
+	text-align: center;
 }
 
 .top-child {
 	background-color: var(--color02);
 	display: inline-block;
-	margin: var(--gutter) auto;
-	width: calc(var(--width) * 0.2);
+	width: 20%;
 }
 
 #middle {
 	background-color: var(--color02);
-	margin: var(--gutter) auto;
 	width: var(--width);
 	height: var(--height);
+	margin: var(--gutter) auto;
+	position: relative;
 }
 
 #middle div {
 	background-color: var(--color03);
 	width: var(--middle-child-width);
 	height: var(--middle-child-width);
-	position: relative;
+}
+
+.middle-child01 {
+	position: absolute;
 	top: var(--offset);
 	left: var(--offset);
 }
 
-#middle .middle-child02 {
+.middle-child02 {
+	position: absolute;
+	top: calc(var(--offset) + var(--middle-child-width));
 	left: calc(var(--offset) + var(--middle-child-width));
 }
 
-#middle .middle-child03 {
+.middle-child03 {
+	position: absolute;
+	top: calc(var(--offset) + calc(var(--middle-child-width) * 2));
 	left: calc(var(--offset) + calc(var(--middle-child-width) * 2));
 }
 
 #bottom {
 	background-color: var(--color03);
-	margin: var(--gutter) auto;
 	width: var(--width);
 	height: var(--bottom-height);
+	margin: var(--gutter) auto;
 }
 
 #bottom div {
@@ -70,10 +74,10 @@ body {
 	position: relative;
 }
 
-#bottom .bottom-child02 {
+.bottom-child02 {
 	left: calc(var(--bottom-child-width) / 2);
 }
 
-#bottom .bottom-child03 {
+.bottom-child03 {
 	left: calc(var(--bottom-child-width));
 }
