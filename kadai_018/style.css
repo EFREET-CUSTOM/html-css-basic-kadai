@@ -8,11 +8,11 @@
 	--gutter: 20px;
 	--width: 800px;
 	--height: var(--width);
-	--offset: 100px;
 	--middle-child-width: calc(var(--width) / 4);
 	--bottom-child-width: calc(var(--width) / 2);
 	--bottom-child-height: 100px;
 	--bottom-height: calc(var(--bottom-child-height) * 3);
+	--offset: calc(calc(var(--width) - calc(var(--middle-child-width) * 3)) / 2);
 }
 
 #top {
