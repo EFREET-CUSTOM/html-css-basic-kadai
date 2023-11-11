@@ -10,9 +10,10 @@
 	--height: var(--width);
 	--middle-child-width: calc(var(--width) / 4);
 	--bottom-child-width: calc(var(--width) / 2);
-	--bottom-child-height: 100px;
+	--bottom-child-height: calc(calc(var(--width) * 12.5) / 100);
 	--bottom-height: calc(var(--bottom-child-height) * 3);
 	--offset: calc(calc(var(--width) - calc(var(--middle-child-width) * 3)) / 2);
+	--font-size: calc(var(--width) / 50);
 }
 
 #top {
@@ -20,6 +21,7 @@
 	width: var(--width);
 	margin: var(--gutter) auto;
 	text-align: center;
+	font-size: var(--font-size);
 }
 
 .top-child {
