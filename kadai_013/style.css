@@ -88,30 +88,26 @@ body {
 	width: 100%;
 	display: none;
 	z-index: 100;
+}
 
-	> a {
-		display: block;
-	}
+#nav-sp a {
+	display: block;
+	color: white;
+}
 
-	> a:link, > a:visited, > a:active {
-		color: white;
-	}
+#nav-sp a:hover {
+	text-decoration: underline;
+}
 
-	> a:hover {
-		color: white;
-		text-decoration: underline;
-	}
-
-	> .menu {
-		text-decoration: none;
-		display: block;
-		margin: 0 20px 0 20px;
-		height: 44px;
-		font-size: 16px;
-		background-image: url("images/arrow.png");
-		background-repeat: no-repeat;
-		background-position: right top;
-	}
+#nav-sp .menu {
+	text-decoration: none;
+	display: block;
+	margin: 0 20px 0 20px;
+	height: 44px;
+	font-size: 16px;
+	background-image: url("images/arrow.png");
+	background-repeat: no-repeat;
+	background-position: right top;
 }
 
 #close {
